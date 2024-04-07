@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/*@font-face{
+    src: url(Fonts/Poppins-Medium.ttf);
+    font-family: "Poppins";
+}*/
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    }
+
+header{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 92%, 50% 100%, 0 92%, 0 50%);
+    flex-direction: column;
+    margin-top: -7.5vh;
+}
+
+#ppom{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    background: hsla(0, 0%, 20%, 0.75);
+    font-size: 4em;
+    font-weight: 700;
+    color: white;
+    margin-top: -15vh;
+    animation: slideIn 1s forwards ease-in-out;
+    clip-path: polygon(30% 0, 70% 0, 70% 100%, 30% 100%);
+}
+@keyframes slideIn{
+    from{
+        margin-top: 0vh;
+    }
+    to{
+        margin-top: -15vh;
+    }
+}
+
+.products{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20vh;
+    background: lightgrey;
+    min-height: 100vh;
+}
+
+.inspiration{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.inspiration h1{
+    color: #555;
+    font-size: 3em;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.inspiration p{
+    color: #555;
+    font-size: 1.35em;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: -15px;
+}
+
+.collectionHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    gap: 40px;
+}
+
+.products .collectionHolder .collection{
+    background: white;
+    text-align: center;
+    padding: 40px;
+    height: 70vh;
+    width: 25vw;
+    border-radius: 10%;
+
+}
+
+.products .collectionHolder .collection img{
+    width: auto;
+    height: 200px;
+}
+
+#img2{
+    opacity: 0;
+    margin-top: 0; /*230px*/
+    margin-left: -20.1vw;
+    position: absolute;
+}
+
+#push{
+    font-size: 0.7em;
+}
+
+.products .collectionHolder .collection .description h2{
+    color: #555;
+}
+
+.products .collectionHolder .collection .description p{
+    color: #777;
+    font-size: 0.8em;
+}
+
+.ourRecomendations{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2.5vw;
+    margin-top: 10vh;
+    font-family: 'Poppins';
+    background: hsl(0, 0%, 9%);
+    padding: 5vh 0 5vh 0;
+}
+.ourRecomendations .heading{
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    width: 100%;
+}
+
+.ourRecomendations .imgDesProduct{
+    text-align: center;
+    color: #555;
+    background: whitesmoke;
+    width: 28vw;
+    min-height: 220px;
+    padding: 10px;
+}
+.ourRecomendations .imgDesProduct img{
+    height: 200px;
+    width: auto;
+}
+.ourRecomendations .imgDesProduct .productDescription span{
+    font-size: 1em;
+}
+.ourRecomendations .imgDesProduct .productDescription span a{
+    text-decoration: none;
+    color: #555;
+}
+.ourRecomendations .imgDesProduct .productDescription span a:hover{
+    color: black;
+}
+.ourRecomendations .imgDesProduct .productDescription p{
+    font-size: 0.8em;
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+    min-height: 20vh;
+    padding: 0;
+    margin: 0;
+}
+.center{
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: -10vw;
+}
+.center a{
+    font-size: 20px;
+    font-family: arial;
+    font-size: 1.6em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: .5s;
+    text-align: center;
+}
+.center a:before{
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 40px;
+    background: #fff;
+    color: #000;
+    border: 3px solid #000;
+    transition: .5s;
+    transform-origin: right;
+    transform: translateX(-100%) rotateY(90deg);
+    width: 30vw;
+    height: auto;
+}
+.center a:after{
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 40px;
+    background: #0e51e2;
+    color: #fff;
+    border: 3px solid #000;
+    transition: .5s;
+    transform-origin: left;
+    transform: translateX(0) rotateY(0deg);
+    width: 30vw;
+    height: auto;
+}
+.center a:hover:before{
+    transform: translateX(0) rotateY(0deg);
+}
+.center a:hover:after{
+    transform: translateX(100%) rotateY(90deg);
+}
+
+/*____________________________________________*/
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+    background: #068ef0;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .content p{
+    font-weight: 300;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contactForm{
+    width: 60%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input, .contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .maila a, .contactForm .maila p{
+    color: hsl(0, 0%, 40%);
+}
+
+.contactForm .inputBox span{
+   position: absolute;
+   left: 0;
+   padding: 5px 0;
+   font-size: 16px;
+   margin: 10px 0;
+   pointer-events: none; 
+   transition: 0.5s;
+   color: hsl(0, 0%, 40%);
+}
+.contactForm .inputBox input:focus ~ span, 
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+   color: hsl(340, 82%, 52%);
+   font-size: 12px;
+   transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: hsl(187, 100%, 42%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.contactForm .inputBox input[type="submit"]:hover{
+    background: hsl(187, 100%, 34%);
+}
+
+@media (max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactForm{
+        width: 100%;
+    }}
+
+/*____________________________________________*/
+
+.brandContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.brandContainer .ourBrands{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    width: 50%;
+    margin: auto;
+}
+.brandContainer .ourBrands h1{
+    font-size: 1.5em;
+}
+.brandContainer .ourBrands p{
+    font-size: 1em;
+}
+.brandContainer .imgContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10vh;
+}
+.brandContainer .imgContainer img{
+    width: 100px;
+    height: auto;
+    display: block;
+}
+/*
+#footnote{
+    display: grid;
+    justify-content: center;
+    align-content: end;
+    min-height: 60vh;
+    background: hsl(0, 0%, 91%); 
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: hsl(0, 0%, 100%);
+    box-sizing: border-box;
+}
+footer .container1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+footer .container1 .sec h2{
+    position: relative;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+footer .container1 .sec p{
+    color: #555;
+}
+footer .container1 .sci{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+}
+footer .container1 .sci li{
+    list-style: none;
+}
+footer .container1 .sci li a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: #333;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+}
+footer .container1 .sci li a i{
+    color: #fff;
+    font-size: 20px;
+}
+footer .container1 .quicklinks{
+    position: relative;
+}
+footer .container1 .quicklinks ul li{
+    list-style: none;
+}
+footer .container1 .quicklinks ul li a{
+    color: #555;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-left: -35px;
+}
+footer .container1 .quicklinks ul li a:hover{
+    color: black;
+}
+footer .container1 .contacts .info{
+    position: relative;
+}
+footer .container1 .contacts .info li{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+footer .container1 .contacts .info li span{
+    color: #555;
+    font-size: 20px;
+    margin-left: -38px; 
+    margin-top: 12px; 
+}
+footer .container1 .contacts .info li a{
+    color: #555;
+    text-decoration: none;
+    margin-left: -38px;
+}
+footer .container1 .contacts .info li a:hover{
+    color: hsl(0, 0%, 0%);
+}
+.copyrightText{
+    width: 100%;
+    background: #fff;
+    padding: 20px 50px 30px;
+    text-align: center;
+    color: #555;
+    border: 1px solid hsla(0, 0%, 0%, 0.15);
+}
+
+@media (max-width: 991px){
+   
+    footer{
+        padding: 40px;
+    }
+    footer .container1{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .copyrightText{
+        padding: 20px 40px 30px;
+    }
+}
+
+@media (max-width: 768px){
+    footer .container1{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+}*/

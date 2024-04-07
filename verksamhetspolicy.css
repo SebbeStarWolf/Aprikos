@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+
+.policy{
+    width: 100%;
+    background: whitesmoke;
+    font-family: sans-serif;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.policy h1{
+    text-align: center;
+    color: #555;
+}
+
+.policy .content{
+    margin: auto;
+    width: 60vw;
+    min-height: 12vh;
+    padding: 15px;
+}
+
+.policy .content h3{
+    color: #555;
+    font-size: 1.3em;
+}
+.policy .content p{
+    color: #777;
+    font-size: 1.1em;
+}
+
+#tillbaka{
+    margin-left: 90%;
+    margin-top: 2vh;
+}
+#tillbaka a{
+    text-decoration: underline;
+    color: rgb(62, 62, 62);
+    font-size: 1.2em;
+}
+#tillbaka a:hover{
+    color: black;
+}

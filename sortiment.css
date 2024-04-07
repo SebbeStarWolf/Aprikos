@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+#tillbaka{
+    margin-left: 90%;
+    margin-top: 2vh;
+}
+#tillbaka a{
+    text-decoration: underline;
+    color: rgb(62, 62, 62);
+    font-size: 1.2em;
+}
+#tillbaka a:hover{
+    color: black;
+}
+
+.container{
+    margin-left: 0;
+    width: 30%;
+    min-height: 150vh;
+    background: #acacac;
+    margin-top: 0;
+}
+
+.collectionHolder{
+    display: flex;
+    margin-top: 10vh;
+    font-family: 'Poppins';
+    flex-direction: column;
+    gap: 3vh;
+    margin-left: 5vw;
+}
+
+#cat{
+    font-size: 2em;
+}
+
+.container .collectionHolder .subCat{
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+.container .collectionHolder .subCat:hover{
+    text-decoration: underline;
+    font-size: 1.55em;
+}
+
+#centerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: -150vh;
+}
+#centerContainer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: -150vh;
+    display: none;
+}
+
+.collectionProfile{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10vw; 
+    row-gap: 5vh;
+    font-family: sans-serif;
+}
+.collectionProfile .group .headline{
+    display: flex;
+    flex-direction: row;
+}
+.collectionProfile .group .headline i{
+    margin-left: 1vw;
+    font-size: 1.1em;
+    margin-top: 2.3vh;
+}
+
+.collectionProfile .group .subGroup .product a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;
+    border-bottom: 1px solid transparent; 
+    transition: border-bottom 0.3s;
+}
+
+.collectionProfile .group .subGroup .product a:hover {
+    border-bottom: 1px solid black; /* Ändra till ett streck när du hovrar över länken */
+}
+.collectionProfile .group .subGroup{
+    display: none;
+}
+.collectionProfile .group .subGroup.active {
+    display: block;
+}

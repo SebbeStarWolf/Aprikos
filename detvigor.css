@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@font-face{
+    src: url(Fonts/Montserrat/static/Montserrat-LightItalic.ttf);
+    font-family: "Montserrat";
+}
+
+body{
+    margin: 0;
+}
+header img{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    margin-top: -20vh;
+}
+
+header h1{
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 4em;
+    font-weight: 700;
+    margin-top: -40vh;
+    animation: slideIn 3s forwards ease-in-out;
+    color: white;
+}
+
+@keyframes slideIn{
+    from{
+        margin-top: -10vh;
+    }
+    to{
+        margin-top: -40vh;
+    }
+}
+
+.custom-shape-divider-bottom-1712484019 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1712484019 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 149px;
+}
+
+.custom-shape-divider-bottom-1712484019 .shape-fill {
+    fill: white;
+}
+
+.textAboutContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#text1{
+    min-height: 100vh;
+    margin-top: 20vh;
+    background: whitesmoke;
+}
+#text2{
+    background: rgb(203, 213, 227);
+    min-height: 70vh;
+}
+
+.textAboutContainer .textAbout{
+    margin-top: 7vh;
+    width: 70vw;
+    min-height: 50vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat";
+    margin-bottom: 10vh;
+}
+#about1{
+    background: whitesmoke;
+}
+#about2{
+    background: rgb(203, 213, 227);
+}
+
+.textAboutContainer .textAbout h1, .textAbout h3{
+    color: rgb(83, 83, 83);
+}
+
+.textAboutContainer .textAbout h1{
+    font-size: 2.2em;
+    font-weight: 600;
+}
+.textAboutContainer .textAbout h3{
+    font-size: 1.4em;
+}
+
+.textAboutContainer .textAbout p{
+    font-size: 1.1em;
+    color: rgb(135, 135, 135);
+}
+
