@@ -18,18 +18,15 @@ gsap.to(".action", {
 function activateScrollTrigger() {
     if (window.innerWidth < 992) {
         // If the screen width is less than 992px, activate ScrollTrigger for each #var element
-        for (let i = 1; i <= 5; i++) {
-            gsap.to(`#var${i}`, {
-                x: "-100%",
-                ease: "power1.out",
-                scrollTrigger: {
-                    trigger: `#var${i}`,
-                    start: "top 90%",
-                    end: "bottom 60%",
-                    scrub: true
-                }
-            });
-        }
+        gsap.to("#var1, #var2, #var3, #var4, #var5", {
+    x: "-100%",
+    ease: "power1.out",
+    scrollTrigger: {
+        start: "top 90%",
+        end: "bottom 60%",
+        scrub: true
+    }
+});
 
         // If the screen width is less than 992px, kill ScrollTrigger for .valueContainer
         ScrollTrigger.getAll(".valueContainer")[0].kill(); // Kill ScrollTrigger for .valueContainer
@@ -47,9 +44,7 @@ function activateScrollTrigger() {
         });
 
         // If the screen width is greater than or equal to 992px, kill ScrollTrigger for each #var element
-        for (let i = 1; i <= 5; i++) {
-            ScrollTrigger.getAll(`#var${i}`)[0].kill(); // Kill ScrollTrigger for each #var element
-        }
+        ScrollTrigger.getAll("#var1, #var2, #var3, #var4, #var5")[0].kill();
     }
 }
 
