@@ -1034,6 +1034,18 @@ body{
     .varderingar .valueContainer .vardering .disvardering{
         width: 100%;
     }
+     #set1{
+        min-height: 480vh;
+    }
+    #set2{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 50vh;
+    }
+    #set2 .card{
+        margin: auto;
+    }
 
 }
 
