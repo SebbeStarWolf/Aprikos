@@ -639,51 +639,16 @@ body{
 }
 
 #set1{
-    min-height: 150vh;
-    overflow: visible;
+    min-height: 260vh;
 }
-
 #set2{
-    width: 100%;
+    width: 100%; /*1050px*/
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 25vh;
 }
 #set2 .card{
-    width: 280px; /*300px*/
-    height: 370px; /*400px*/
-}
-#set2 .card:before{
-    top: -15px;
-    height: 15px;
-}
-
-#set2 .card:after{
-    top: -15px;
-    left: -15px;
-    width: 15px;
-    height: 50%;
-    border-bottom: 290px solid hsl(0, 0%, 85%); 
-}
-
-#set2 .card:hover{
-    transform: translateY(-20px); /*-40px*/
-}
-#set2 .card .imgBx{
-    width: 300px;
-    height: 200px; 
-}
-#set2 .card .imgBx h3{
-    margin-top: 10px;
-}
-#set2 .card .imgBx .mark{
-  max-width: 100px;
-  font-size: 3em;
-}
-#set2 .card .content{
-    width: 100%;
-    height: 250px;
-    padding-top: 40px; 
-}
-#set2 .card .content:before{
-    height: 400px;
+    margin: auto;
 }
 
 }
