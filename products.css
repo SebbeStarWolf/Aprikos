@@ -13,6 +13,10 @@ header{
     flex-direction: column;
     margin-top: -7.5vh;
 }
+header::after{
+    content: '';
+    display: none;
+}
 
 #ppom{
     display: flex;
