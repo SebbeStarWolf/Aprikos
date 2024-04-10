@@ -523,7 +523,7 @@ body{
 /*Mobiler start*/
 
 @media only screen and (max-width: 428px) and (orientation: portrait) {
-   *{
+   html{
         overflow-x: hidden;
     } 
     .collectionHolder {
@@ -689,7 +689,7 @@ body{
 }
 
 @media only screen and (max-height: 428px) and (max-width: 668px){
-    *{
+    html{
         overflow-x: hidden;
     }
     .collectionHolder {
@@ -803,7 +803,7 @@ body{
 }
 
 @media only screen and (max-width: 431px) and (min-height: 801px) /*Större telefoner*/ {
-    *{
+    html{
         overflow-x: hidden;
     }
     .collectionHolder {
@@ -932,7 +932,7 @@ body{
 }
 
 @media only screen and (min-width: 801px) and (max-height: 431px){
-    *{
+    html{
         overflow-x: hidden;
     }
     .collectionHolder {
@@ -1050,9 +1050,8 @@ body{
 /*Mobiler stopp*/
 
 @media only screen and (min-width: 601px) and (max-width: 767px) and (min-height: 429px) {
-    *{
+    html{
         overflow-x: hidden;
-        /*overflow-y: hidden;*/
     }
     .products .collectionHolder .collection .description h2{
         margin-top: 5vh;
@@ -1197,9 +1196,8 @@ body{
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) and (min-height: 431px){
-    *{
+    html{
         overflow-x: hidden;
-        overflow-y: hidden;
     }
     
     .products .collectionHolder .collection .description h2{
@@ -1412,9 +1410,8 @@ body{
 
 @media only screen and (min-width: 992px) and  (max-width: 1199px) {
    
-    *{
+    html{
         overflow-x: hidden;
-        overflow-y: hidden;
     }
     
     .products .collectionHolder .collection .description h2{
@@ -1477,7 +1474,7 @@ body{
 
     header h3{
         margin-left: 45vw;
-        margin-top: -6vh;
+        margin-top: -12vh;
         font-size: 1.6em;
     }
     header p{ 
@@ -1485,6 +1482,7 @@ body{
         margin-top: 1vh;
         font-size: 1.4em;
     }
+    
     header img{
         width: 120px;
         height: auto;
@@ -1500,22 +1498,22 @@ body{
       #IntroBox{
         margin-top: 2.5vh;
         width: 60vw;
-        height: 22vh;
+        height: 42vh;
         padding: 15px;
         border-radius: 8px;
     }
     
     #IntroBox h4{
-        font-size: 1.2em;
-        margin-top: 2vh;
+        font-size: 1.6em;
+        margin-top: 3vh;
     }
     #IntroBox p{
-        margin-top: 1vh;
-        font-size: 1em;
+        margin-top: 6vh;
+        font-size: 1.4em;
     }
     
     #t2 {
-        font-size: 0.9em;
+        font-size: 1.1em;
         width: 30vw;
         margin: auto;
         height: 15vh;
