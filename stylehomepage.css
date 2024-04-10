@@ -54,7 +54,7 @@ body{
     
      #t2 {
         position: relative;
-        background-color: hsl(212, 100%, 50%);
+        background-color: rgb(0, 110, 255);
         color: white;
         font: italic 500 0.86em "Montserrat";
         width: 16vw;
@@ -78,7 +78,7 @@ body{
         right: -0.39vw; 
         border-width: 40px 0 0 20px; 
         border-style: solid;
-        border-color: hsl(212, 100%, 50%) transparent transparent transparent;
+        border-color: rgb(0, 110, 255) transparent transparent transparent;
         transform: translateX(10px) rotateZ(230deg) scale(1);  
         animation: fadeInSlow 3s ease-in forwards;
     }
