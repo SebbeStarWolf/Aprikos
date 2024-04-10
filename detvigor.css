@@ -59,6 +59,7 @@ header h1{
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: auto;
 }
 #text1{
     min-height: 100vh;
