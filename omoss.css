@@ -625,6 +625,8 @@ header img#intropic {
     }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+    .largeWrapper .wrapper .theme .bubble{
+        padding: 20px;
+    }
 }
