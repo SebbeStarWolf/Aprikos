@@ -109,6 +109,11 @@ header{
     color: #555;
 }
 
+.products .collectionHolder .collection .description h4:hover{
+    color: rgb(7, 184, 244);
+    text-decoration: underline;
+}
+
 .products .collectionHolder .collection .description p{
     color: #777;
     font-size: 0.8em;
