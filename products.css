@@ -109,7 +109,11 @@ header{
     color: #555;
 }
 
-.products .collectionHolder .collection .description h4:hover{
+.products .collectionHolder .collection .description a{
+    color: #333;
+    text-decoration: none;
+}
+.products .collectionHolder .collection .description a:hover{
     color: rgb(7, 184, 244);
     text-decoration: underline;
 }
