@@ -530,7 +530,7 @@ body{
         flex-direction: column;
         align-items: stretch;
         flex-wrap: wrap;
-        gap: 20px; /*40px*/
+        gap: 20px;
     }
     .products .collectionHolder .collection{
         padding: 40px;
@@ -627,7 +627,6 @@ body{
 }
 .varderingar .valueContainer .vardering{
     width: 60vw;
-    margin-left: 100%;
 }
 .varderingar .valueContainer .vardering .circle{
     width: 100px;
@@ -755,7 +754,6 @@ body{
     }
     .varderingar .valueContainer .vardering{
         width: 72vw;
-        margin-left: 100%;
     }
     .varderingar .valueContainer .vardering .circle{
         width: 100px;
@@ -788,7 +786,7 @@ body{
         flex-direction: column;
         align-items: stretch;
         flex-wrap: wrap;
-        gap: 30px; /*40px*/
+        gap: 30px;
         margin-top: -3vh;
     }
     .products .collectionHolder .collection{
@@ -897,7 +895,6 @@ body{
 }
 .varderingar .valueContainer .vardering{
     width: 60vw;
-    margin-left: 100%;
 }
 .varderingar .valueContainer .vardering .circle{
     width: 100px;
@@ -1024,7 +1021,6 @@ body{
     }
     .varderingar .valueContainer .vardering{
         width: 72vw;
-        margin-left: 100%;
     }
     .varderingar .valueContainer .vardering .circle{
         width: 100px;
@@ -1328,7 +1324,6 @@ body{
     }
     .varderingar .valueContainer .vardering{
         width: 72vw;
-        margin-left: 100%;
     }
     .varderingar .valueContainer .vardering .circle{
         width: 200px;
@@ -1546,7 +1541,6 @@ body{
     }
     .varderingar .valueContainer .vardering{
         width: 72vw;
-        margin-left: 100%;
     }
     .varderingar .valueContainer .vardering .circle{
         width: 200px;
