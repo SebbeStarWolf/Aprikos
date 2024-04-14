@@ -54,7 +54,7 @@ body{
     
      #t2 {
         position: relative;
-        background-color: rgb(0, 110, 255);
+        background-color: hsl(245, 90%, 30%);
         color: white;
         font: italic 700 0.86em "Montserrat";
         width: 16vw;
@@ -78,7 +78,7 @@ body{
         right: -0.39vw; 
         border-width: 40px 0 0 20px; 
         border-style: solid;
-        border-color: rgb(0, 110, 255) transparent transparent transparent;
+        border-color: hsl(245, 90%, 30%) transparent transparent transparent;
         transform: translateX(10px) rotateZ(230deg) scale(1);  
         animation: fadeInSlow 3s ease-in forwards;
     }
@@ -484,9 +484,9 @@ body{
     font-family: "Montserrat", sans-serif;
     font-size: 1em;
     text-align: center;
-    border: 3px solid rgb(0, 0, 225);
+    border: 3px solid white;
     border-radius: 10px;
-    background-color: rgb(0, 110, 255);
+    background-color: hsl(245, 90%, 30%);
     color: white;
 }
 .action h3{
