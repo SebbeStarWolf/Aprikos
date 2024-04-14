@@ -1,4 +1,4 @@
-ScrollReveal({ reset: true });
+/*ScrollReveal({ reset: true });
 
 // Använd ScrollTrigger för att göra .action synlig på scroll
 gsap.registerPlugin(ScrollTrigger);
@@ -52,4 +52,4 @@ function activateScrollTrigger() {
 activateScrollTrigger();
 
 // Listen for window resize events and run the function again
-window.addEventListener("resize", activateScrollTrigger);
+window.addEventListener("resize", activateScrollTrigger);*/
