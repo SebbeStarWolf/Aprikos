@@ -648,6 +648,9 @@ body{
 #set2 .card{
     margin: auto;
 }
+.action h3{
+    font-size: 0.9em;
+}
 
 }
 
@@ -914,6 +917,9 @@ body{
 }
 #set2 .card{
     margin: auto;
+}
+.action h3{
+    font-size: 0.9em;
 }
 }
 
