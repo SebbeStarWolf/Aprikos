@@ -1057,7 +1057,7 @@ header::after{
     }
     header::after{
         width: 9.5vw;
-        height: 6vh;
+        height: 10vh;
         background: rgb(0, 0, 54);
         display: block;
         margin-top: 4.5vh;
