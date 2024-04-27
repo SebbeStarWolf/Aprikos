@@ -503,7 +503,7 @@ body{
 }
 .action h4:hover{
     font-size: 1.3em;
-    margin-left: -70px;
+    margin-left: -125px;
 }
 .action a:hover + i, /* Visa ikonen när du hovrar över h4 */
 .action i.visible { /* Stil för synlig ikon */
