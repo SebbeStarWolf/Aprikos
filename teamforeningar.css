@@ -286,7 +286,7 @@ body{
         width: 0;
     }
 }
-@media screen and (max-height: 668px) and (max-width: 376px){
+@media screen and (max-height: 669px) and (max-width: 376px){
     .carousel .list .item .content{
         top: 5%;
         padding-right: 0;
@@ -307,7 +307,7 @@ body{
     font-size: 1em;
 }
 }
-@media screen and (min-height: 669px) and (max-width: 678px){
+@media screen and (min-height: 670px) and (max-width: 678px){
     .carousel .list .item .content{
         padding-right: 0;
         clip-path: none;
