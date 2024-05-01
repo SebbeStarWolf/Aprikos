@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    width: 100vw;
+    min-height: 100vh;
+    background: url(Images/pexels-img_1979-stevonka-379280-2116469.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#tillbaka{
+    margin-left: 90%;
+    margin-top: 2vh;
+}
+#tillbaka a{
+    text-decoration: underline;
+    color: rgb(62, 62, 62);
+    font-size: 1.2em;
+}
+#tillbaka a:hover{
+    color: black;
+}
+.subject{
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+    color: #fff;
+    background: hsla(0, 0%, 40%, 0.685);
+    margin-top: 30px;
+}
+.subject p{
+    font-size: 0.8em;
+}
+.takeContact{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    width: 30%;
+    height: 50px;
+    font-size: 2em;
+    margin: auto;
+    background: hsl(0, 0%, 40%);
+    border: 2px solid hsl(0, 0%, 18%);
+    transition: .8s;
+    border-radius: 8px;
+}
+.takeContact:hover{
+    transform: scale(1.03);
+    text-decoration: underline white;
+}
+.takeContact a{
+    text-decoration: none;
+    color: #fff;
+}
+@media screen and (max-width: 668px){
+    .background{
+        margin-top: -15px;
+    }
+    #tillbaka{
+        margin-left: 40%;
+    }
+    .takeContact{
+        width: 70%;
+    }
+}
