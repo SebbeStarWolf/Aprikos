@@ -994,6 +994,131 @@ body{
 }
 }
 
+@media only screen and (min-width: 600px) and (max-width: 800px) and (max-height: 428px){
+    html{
+        overflow-x: hidden;
+    }
+    .collectionHolder {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .products .collectionHolder .collection{
+        padding: 20px;
+        height: auto;
+        width: 80vw;
+    }
+    .products .collectionHolder .collection img{
+        width: 200px;
+        height: auto;
+        border-radius: 8%;
+    }
+
+    .blockContainer{
+        gap: 5px; 
+      }
+    .movingBlock{
+        width: 75px; 
+      }
+      
+    #seller1{
+        font-size: 1.5em; 
+      } 
+    #movingBlock1{
+        height: 65px;
+      } 
+    #movingBlock2{
+        height: 65px;
+      }
+
+    header{
+        height: 25vh;
+        margin-top: 0;
+    }  
+
+    header h3{
+        margin-left: 45vw;
+        margin-top: -12vh;
+        font-size: 1.2em;
+    }
+    header p{ 
+        margin-left: 38vw;
+        margin-top: 1vh;
+        font-size: 1em;
+    }
+    header img{
+        width: 80px;
+        height: auto;
+        margin-top: 3vh;
+      }
+
+      #IntroBox{
+        margin-top: 5vh;
+        width: 60vw;
+        height: 45vh;
+        padding: 15px;
+        border-radius: 8px;
+    }
+    
+    #IntroBox h4{
+        font-size: 1em;
+        margin-top: 5vh;
+    }
+    #IntroBox p{
+        margin-top: 3vh;
+        font-size: 0.8em;
+    }
+    
+    #t2 {
+        font-size: 0.7em;
+        width: 40vw;
+        margin: auto;
+        height: 15vh;
+        border: 2px solid white;
+        border-radius: 12px;
+        margin-top: 0;
+      }
+      
+      #t2::before {
+        opacity: 0;  
+    }
+
+    .varderingar{
+        height: 300vh;
+    }
+    .varderingar .varIntro{
+        margin-top: -10vh;
+    }
+    .varderingar .valueContainer{
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 5vh;
+        margin-left: 0;
+    }
+    .varderingar .valueContainer .vardering{
+        width: 72vw;
+    }
+    .varderingar .valueContainer .vardering .circle{
+        width: 100px;
+        height: 100px; 
+        font-size: 2.2em;
+    }
+    .varderingar .valueContainer .vardering .disvardering{
+        width: 100%;
+    }
+    #set1{
+        min-height: 480vh;
+    }
+    #set2{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 50vh;
+    }
+    #set2 .card{
+        margin: auto;
+    }
+}
 @media only screen and (min-width: 801px) and (max-height: 431px){
     html{
         overflow-x: hidden;
