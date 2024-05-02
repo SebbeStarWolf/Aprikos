@@ -256,6 +256,47 @@ body{
     background: lightgrey;
     min-height: 100vh;
 }
+.products button{
+    width: 300px;
+    height: 60px;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    font-size: 1.5em;
+    border: 2px solid rgb(78, 78, 78);
+    background: rgb(115, 115, 115);
+    margin-bottom: 2vh;
+}
+.products button a{
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+.products button a:hover{
+    text-decoration: underline #fff;
+}
+.products button::before{
+    content: '';
+    position: absolute;
+    margin-top: -27px;
+    margin-left: -33px;
+    width: 300px;
+    height: 15px;
+    background: rgb(78, 78, 78);
+    transform-origin: bottom;
+    transform: skewX(45deg);
+}
+
+.products button::after{
+    content: '';
+    position: absolute;
+    margin-top: -27px;
+    margin-left: -281px;
+    width: 15px;
+    height: 60px;
+    background: rgb(53, 53, 53);
+    transform-origin: left;
+    transform: skewY(45deg);
+}
 
 .blockContainer{
     height: 20vh;
