@@ -17,6 +17,7 @@
         <div id="cat"><h2>Kategorier</h2></div>
         <div class="subCat" id="profilprodukter">Profilprodukter & trycksaker</div>
         <div class="subCat" id="profilklader">Profilkläder</div>
+        <div class="subCat" id="erbjudanden">Erbjudanden & kampanjer</div>
     </div>
 </div>
 
@@ -388,6 +389,20 @@
 
   </div>
 </div>
+<div id="centerContainer3">
+    <div class="collectionProfile">
+        <div class="group">
+         <div class="headline">
+         <h3>Kampanjer & erbjudanden</h3><i class="fa-solid fa-chevron-down"></i></div>
+
+         <div class="subGroup">
+            <div class="product"><a href="https://viewer.joomag.com/sommartoppen-ss24/0342833001710829377" target="_blank">Sommartoppen - Dochj</a></div>
+            <div class="product"><a href="https://houseofregalo.se/produkt-kategorier/sommarkampanj/" target="_blank">Sommarkampanj - House of Regalo</a></div>
+            </div>
+            </div>
+
+            </div>
+        </div>
 <!--Skylt, plastkort, dekal, trycksaker prident-->
 
 <div id="footnote">
@@ -425,8 +440,8 @@
                 <h2>Kontakta oss</h2>
                 <ul class="info">
                     <li>
-                        <span><i class="fa-solid fa-phone"></i></span><p><a href="tel:+46761353398">
-                            +46 76-135 33 98
+                        <span><i class="fa-solid fa-phone"></i></span><p><a href="tel:+46728885003">
+                            +46 72 888 50 03
                         </a></p>
                     </li>
                     <li>
@@ -468,20 +483,30 @@
         // Hämta referenser till elementen
 const centerContainer = document.getElementById("centerContainer");
 const centerContainer2 = document.getElementById("centerContainer2");
+const centerContainer3 = document.getElementById("centerContainer3");
 const divProfilprodukter = document.getElementById("profilprodukter");
 const divProfilklader = document.getElementById("profilklader");
+const divErbjudanden = document.getElementById("erbjudanden");
 
 // Lägg till klickhändelselyssnare för div-elementen
 divProfilprodukter.addEventListener("click", function() {
     // Visa centerContainer och dölj centerContainer2
     centerContainer.style.display = "flex";
     centerContainer2.style.display = "none";
+    centerContainer3.style.display = "none";
 });
 
 divProfilklader.addEventListener("click", function() {
     // Visa centerContainer2 och dölj centerContainer
     centerContainer2.style.display = "flex";
     centerContainer.style.display = "none";
+    centerContainer3.style.display = "none";
+});
+
+divErbjudanden.addEventListener("click", function() {
+    centerContainer3.style.display = "flex";
+    centerContainer.style.display = "none";
+    centerContainer2.style.display = "none";
 });
     </script>
 
