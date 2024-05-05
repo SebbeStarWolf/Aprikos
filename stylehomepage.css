@@ -398,7 +398,288 @@ body{
     color: rgb(7, 184, 244);
     text-decoration: underline;
 }
+/*ERBJUDANDEN*/
+.lane{
+    width: 100%;
+    background: #fff;
+    height: 80px;
+}
+.offerContainer{
+    min-height: 100vh;
+    width: 100%;
+    margin: auto;
+    background: lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 100px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0;
+}
+.offerContainer video{
+    margin-top: 0;
+    width: 40vw; 
+    height: auto;
+    border-radius: 10px;
+    border: 10px solid black;
+}
+.offerContainer #text{
+    width: 60%;
+    height: 240px;
+    background: lightskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin: auto;
+    overflow: hidden;
+}
+.offerContainer #text .headingBig{
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.8em;
+    line-height: 3.5em;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.offerContainer #text .headingBig::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    color: rgba(0, 0, 0, 0.3);
+    text-shadow: none;
+    filter: blur(8px);
+    z-index: -1;
+}
+.offerContainer .subContainer{
+    display: flex; 
+    flex-direction: column;
+    row-gap: 40px;
+}
+.offerContainer .subContainer .textsub{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+.offerContainer .subContainer p{
+    text-align: center;
+    font-size: 1.4em;
+    color: white;
+}
+.offerContainer .subContainer .collector{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    column-gap: 10vw;
+    width: 100%;
+    font-size: 2em;
+}
+.offerContainer .subContainer .collector .offer-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: darkblue;
+}
+.offerContainer .btnNew{
+    height: 15vh;
+    display: grid;
+    place-items: center;
+    font-family: system-ui;
+    font-size: 1.5em;
+}
+.offerContainer .btnNew button {
+    font: inherit;
+    padding: 0.75em 3em;
+    background: hsl(186, 94%, 45%);
+    border: 0.1em solid hsl(185, 78%, 37%);
+    border-radius: 100vw;
+    cursor: pointer;
+    transition: background-color 250ms;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+  }
+  
+  .offerContainer .btnNew button:hover,
+  .offerContainer .btnNew button:focus-visible {
+    background: hsl(185, 78%, 37%);
+  }
+  
+  .offerContainer .btnNew button > span {
+    position: absolute;
+    z-index: -1;
+    width: 33.333%;
+    height: 100%;
+  
+    background: transparent;
+    opacity: 0.5;
+  }
+  
+  .offerContainer .btnNew button > :first-child {
+    left: 0;
+    top: 0;
+  }
+  
+  .offerContainer .btnNew button > :last-child {
+    right: 0;
+    top: 0;
+  }
+  
+  .offerContainer .btnNew button::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: hsl(200, 80%, 32%);
+    width: 10%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    inset: 0;
+    margin: auto;
+    opacity: 0;
+  
+    transition: transform 1000ms 200ms, opacity 200ms;
+  }
+  
+  .offerContainer .btnNew button:active::before {
+    transform: scale(20);
+    opacity: 1;
+  
+    transition: transform 1000ms, opacity 500ms;
+  }
+  
+  .offerContainer .btnNew button:has(:first-child:active)::before {
+    margin-left: 0;
+  }
+  
+  .offerContainer .btnNew button:has(:last-child:active)::before {
+    margin-right: 0;
+  }
+  
+  .offerContainer .btnNew button:has(:first-child:active)::before,
+  .offerContainer .btnNew button:has(:last-child:active)::before {
+    transition: transform 500ms, opacity 250ms;
+  }
 
+@media only screen and (max-width: 600px){
+    .offerContainer{
+        min-height: 70vh;
+        row-gap: 20px;
+        flex-direction: column;
+    }
+    .offerContainer video{
+        margin-top: 5vh;
+        width: 80vw; 
+    }
+    .offerContainer #text .headingBig{
+        background: transparent;
+    }
+    .offerContainer #text{
+        width: 80%;
+    }
+    .offerContainer .headingBig h1{
+        font-size: 1.4em;
+    }
+    .offerContainer .subContainer .textsub{
+        width: 80%;
+    }
+    .offerContainer .subContainer p{
+        font-size: 1.2em;
+    }
+    .offerContainer .subContainer .collector{
+        column-gap: 30px;
+        width: 100%;
+        font-size: 1.4em;
+    }
+    .offerContainer .subContainer .collector .offer-circle{
+        height: 70px;
+        width: 70px;
+    }
+}
+@media only screen and (min-width: 665px) and (max-width: 940px) and (max-height: 440px){
+    .offerContainer{
+        min-height: 300vh;
+        row-gap: 20px;
+        flex-direction: column;
+    }
+    .offerContainer video{
+        margin-top: 5vh;
+        width: 80vw; 
+    }
+    .offerContainer #text .headingBig{
+        background: transparent;
+    }
+    .offerContainer #text{
+        width: 80%;
+    }
+    .offerContainer .headingBig h1{
+        font-size: 2em;
+    }
+    .offerContainer .subContainer .textsub{
+        width: 80%;
+    }
+    .offerContainer .subContainer p{
+        font-size: 1.6em;
+    }
+    .offerContainer .subContainer .collector{
+        column-gap: 80px;
+        width: 100%;
+        font-size: 1.6em;
+    }
+    .offerContainer .subContainer .collector .offer-circle{
+        height: 100px;
+        width: 100px;
+    }
+      .offerContainer .btnNew{
+        font-size: 2.2em;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1200px) and (min-height: 441px){
+    .offerContainer{
+        min-height: 70vh;
+        row-gap: 20px;
+        flex-direction: column;
+    }
+    .offerContainer video{
+        margin-top: 5vh;
+        width: 80vw; 
+    }
+    .offerContainer #text .headingBig{
+        background: transparent;
+    }
+    .offerContainer #text{
+        width: 80%;
+    }
+    .offerContainer .headingBig h1{
+        font-size: 2em;
+    }
+    .offerContainer .subContainer .textsub{
+        width: 80%;
+    }
+    .offerContainer .subContainer p{
+        font-size: 1.6em;
+    }
+    .offerContainer .subContainer .collector{
+        column-gap: 80px;
+        width: 100%;
+        font-size: 1.6em;
+    }
+    .offerContainer .subContainer .collector .offer-circle{
+        height: 100px;
+        width: 100px;
+    }
+      .offerContainer .btnNew{
+        font-size: 2.2em;
+    }
+}
+/*ERBJUDANDEN*/
 #set1{
     padding: 0;
     box-sizing: border-box;
