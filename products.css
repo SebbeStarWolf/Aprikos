@@ -487,7 +487,7 @@ header::after{
     }
     
     .products{
-        margin-top: 15vh;
+        margin-top: 0;
         min-height: 130vh;
     }
     
@@ -598,7 +598,7 @@ header::after{
     }
     
     .products{
-        margin-top: 65vh;
+        margin-top: 0;
         min-height: 130vh;
     }
     
@@ -708,7 +708,7 @@ header::after{
     }
     
     .products{
-        margin-top: 12vh;
+        margin-top: 0;
         min-height: 130vh;
     }
     
@@ -826,7 +826,7 @@ header::after{
     }
     
     .products{
-        margin-top: 80vh;
+        margin-top: 0;
         min-height: 130vh;
     }
     
@@ -936,7 +936,7 @@ header::after{
     }
     
     .products{
-        margin-top: 40vh;
+        margin-top: 0;
         min-height: 130vh;
     }
     
@@ -1046,7 +1046,7 @@ header::after{
     }
     
     .products{
-        margin-top: 20vh;
+        margin-top: 0;
         min-height: 130vh;
     }
     
@@ -1155,7 +1155,7 @@ header::after{
     }
     
     .products{
-        margin-top: 20vh;
+        margin-top: 0;
         min-height: 130vh;
     }
     
@@ -1239,7 +1239,7 @@ header::after{
     }
     
     .products{
-        margin-top: 70vh;
+        margin-top: 0;
         min-height: 130vh;
     }
     
