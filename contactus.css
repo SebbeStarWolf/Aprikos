@@ -23,7 +23,7 @@ body::before {
     right: 0;
     bottom: 0;
     left: 0;
-    background: hsla(238, 73%, 55%, 0.65); /*hsla(0, 0%, 29%, 0.65)*/
+    background: hsla(0, 0%, 38%, 0.65); /*hsla(238, 73%, 55%, 0.65)*/
     height: 100%;
     z-index: 0;
 } 
