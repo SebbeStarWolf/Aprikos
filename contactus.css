@@ -25,6 +25,7 @@ body::before {
     left: 0;
     background: hsla(238, 73%, 55%, 0.65); /*hsla(0, 0%, 29%, 0.65)*/
     height: 100%;
+    z-index: 0;
 } 
 
 .contact{
