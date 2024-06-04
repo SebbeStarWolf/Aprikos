@@ -80,6 +80,7 @@ header h1{
     flex-direction: column;
     font-family: "Montserrat";
     margin-bottom: 10vh;
+    line-height: 30px;
 }
 #about1{
     background: whitesmoke;
