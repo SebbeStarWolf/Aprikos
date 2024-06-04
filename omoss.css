@@ -189,16 +189,19 @@ header img#intropic {
     margin-left: 50px;
     margin-top: -280px;
 }
-
+@font-face{
+    src: url(Fonts/Montserrat/static/Montserrat-LightItalic.ttf);
+    font-family: "Montserrat";
+}
 .largeWrapper .wrapper .theme .bubble .heading{
     position: absolute;
     width: 40vw;
     height: 200px;
     margin-top: 0; 
     margin-left: 110px; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Montserrat', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: grey;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .largeWrapper .wrapper .theme .bubble .heading .type1{
