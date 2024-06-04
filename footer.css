@@ -9,6 +9,8 @@
     padding: 50px;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    z-index: 2;
+    position: relative;
 }
 
 footer{
