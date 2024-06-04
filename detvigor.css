@@ -12,7 +12,7 @@ header img{
     width: 100%;
     height: auto;
     z-index: 1;
-    margin-top: -20vh;
+    margin-top: -30vh; /*-20vh*/
 }
 
 header h1{
